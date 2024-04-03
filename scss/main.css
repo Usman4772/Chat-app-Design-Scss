@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #fafafa;
+}
+
+.bg-curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30rem;
+  height: 80%;
+  background: linear-gradient(to top, #963bff, #cb42fc);
+  border-bottom-right-radius: 20rem;
+  border-bottom-left-radius: 15rem;
+  z-index: -1;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10rem;
+}
+.main-container .mobile-div {
+  width: 25rem;
+  height: 50rem;
+  background-color: #fefcff;
+  border-radius: 3rem;
+  box-shadow: 0 0 2px rgba(36, 36, 36, 0.694);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  top: -3rem;
+  padding: 1rem 0;
+}
+.main-container .mobile-div header {
+  width: 93%;
+  height: 12%;
+  background: linear-gradient(to right, #963bff, #cb42fc);
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-bottom: 0.5rem;
+  color: white;
+  position: relative;
+}
+.main-container .mobile-div header .header-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.main-container .mobile-div header .header-nav .profile-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.main-container .mobile-div header .header-nav .profile-box .profile-image {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.main-container .mobile-div header .header-nav .profile-box .user-details-div .username {
+  font-size: 1.2rem;
+}
+.main-container .mobile-div header .header-nav .profile-box .user-details-div .user-status {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.788);
+}
+.main-container .mobile-div header::before {
+  content: "";
+  position: absolute;
+  width: 15rem;
+  height: 2.5rem;
+  background-color: #fefcff;
+  border-radius: 10rem;
+  top: -7px;
+  left: 18%;
+}
+.main-container .mobile-div .chat-section {
+  width: 93%;
+  height: 88%;
+  background-color: #f4f2f7;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.main-container .mobile-div .chat-section .first-messages-div {
+  width: 100%;
+  height: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+.main-container .mobile-div .chat-section .first-messages-div .f-message1, .main-container .mobile-div .chat-section .first-messages-div .f-message2 {
+  width: 70%;
+  height: 37%;
+  background-color: #eee6f5;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  padding: 1rem;
+  color: #cb42fc;
+}
+.main-container .mobile-div .chat-section .second-messages-div {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+.main-container .mobile-div .chat-section .second-messages-div .images-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.main-container .mobile-div .chat-section .second-messages-div .images-div img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+}
+.main-container .mobile-div .chat-section .second-messages-div .s-message1, .main-container .mobile-div .chat-section .second-messages-div .s-message2 {
+  width: 70%;
+  height: 40%;
+  background-color: white;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  padding: 1rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.main-container .mobile-div .chat-section .second-messages-div .s-message2 {
+  width: 50%;
+  height: 30%;
+  padding: 1rem 0.5rem;
+}
+.main-container .mobile-div .chat-section .third-messages-div {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+.main-container .mobile-div .chat-section .third-messages-div .t-message1 {
+  width: 70%;
+  height: 50%;
+  background-color: #eee6f5;
+  color: #cb42fc;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.main-container .mobile-div .chat-section .third-messages-div .purple-message1, .main-container .mobile-div .chat-section .third-messages-div .purple-message2 {
+  width: 80%;
+  height: 25%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(to right, #cb42fc, #963bff);
+  padding: 1.7rem 1rem;
+  border-radius: 1rem;
+}
+.main-container .mobile-div .chat-section .input-div {
+  width: 93%;
+  height: 9%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 10rem;
+  margin-top: 2rem;
+}
+.main-container .mobile-div .chat-section .input-div span {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #402854;
+  color: white;
+}
+.main-container .text-div {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 5rem;
+}
+.main-container .text-div h2 {
+  width: 100%;
+  text-align: start;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.main-container .text-div p {
+  width: 100%;
+  padding-right: 5rem;
+  text-align: start;
+  color: rgba(75, 73, 73, 0.74);
+}
+
+@media screen and (max-width: 1000px) {
+  .main-container {
+    gap: 0;
+  }
+  .main-container .text-div {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 826px) {
+  .bg-curve {
+    top: -25px;
+    left: 0;
+    width: 30rem;
+    height: 60%;
+  }
+  .main-container {
+    height: -moz-max-content;
+    height: max-content;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 0;
+  }
+  .mobile-div {
+    width: 40rem;
+  }
+  header::before {
+    left: 30%;
+  }
+  .main-container .text-div {
+    width: 100%;
+    padding: 2rem;
+  }
+  .main-container .text-div h2 {
+    text-align: center;
+  }
+  .main-container .text-div p {
+    text-align: center;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bg-curve {
+    left: -83px;
+  }
+}/*# sourceMappingURL=main.css.map */
